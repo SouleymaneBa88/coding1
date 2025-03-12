@@ -1,0 +1,318 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: rgba(35, 34, 34, 0.168); */
+    background:linear-gradient(45deg,#001A1A,#005757);
+   margin: 0;
+   padding: 0;
+   box-shadow: 10% 10% 10% #fff;
+
+}
+#Accueil{
+    border: 1px solid #005757;
+    box-shadow: 10px 10px 20px #005757;
+}
+header{
+    display: flex;
+    /* background:-moz-linear-gradient(45deg,red,green); */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #FED180;
+    box-shadow: 10px 10px 20px #005757;
+}
+.e{
+    animation: colorChange 3s infinite;
+}
+@keyframes  colorChange{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #FED180;
+    }
+ 100%{
+    color: black;
+}
+}
+
+nav,ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+a:hover{
+    filter: drop-shadow(0 0 10px #FED180);
+
+}
+main{ 
+    padding: 20px;
+    text-align: left;
+}
+h3{
+    margin: 0;
+    font-size: 2em;
+     color: #fff;
+}
+h2{
+    font-size: 2.5em;
+    color: #FED180;
+}
+.e{
+    color: #fff;
+}
+h4{
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #FED180;
+}
+
+p{
+   font-size: 1em;
+   line-height: 1.6;
+   margin: 20px 0;
+   max-width: 600px;
+   color: #FED180;
+   margin-right: auto;
+}
+.img1{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    object-fit: cover;
+    position: relative;
+    right: 40%;
+    left: 70%;
+    top: -50vh;
+    background-color: black;
+    animation: titleEffect 2s infinite;
+}
+@keyframes titleEffect{
+    0%{
+        transform: rotate(0deg);
+        background-color: #005757;
+    }
+    50%{
+        transform: rotate(10deg);
+        background-color: #FED180;
+    }
+    100%{
+        transform: rotate(0deg);
+        background-color: black;
+    }
+}
+ a{
+    padding: 10;
+    margin: 25px;
+    justify-content: flex-end;
+    color: #fff;
+    list-style-type: none;
+    border: 1px solid #005757;
+}
+#About{
+    display: flex;
+    padding: 10px;
+    border: 1px solid #005757;
+    box-shadow: 10px 10px 20px #005757;
+    overflow: hidden;
+}
+#About,section{
+    /* border: 1px solid brown; */
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 45%;
+}
+.ul{
+    list-style-type: none;
+display: block;
+color: #FED180;
+}
+h2[ class="me"]{
+    text-align: center;
+    color: #FED180;
+    font-style: italic;
+}
+table{
+    text-align: center;
+    color: #FED180;
+}
+h2::first-letter{
+    font-size: 2em;
+    color: #fff;
+}
+h2[class="projet"]{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+#projet{
+    border: 1px solid #005757;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    gap: 20px;
+    box-shadow: 10px 10px 20px #005757;
+}
+.img{
+    position: relative;
+    top: 20vh;
+    display: inline-block;
+    justify-content: flex-start;
+    width: 100px;
+    padding: 10px;
+}
+aside{
+   text-align: left;
+}
+.a{
+    color: #fff;
+    list-style-type: none;
+    text-decoration: dotted;
+}
+footer{
+    border: 1px solid #005757;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 20px #005757;
+}
+form{
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    right: -25%;
+    width: 20%;
+    height: 30%;
+    background:#FED180;
+}
+input,textarea{
+    padding: 10px;
+    width: 35vh;
+    margin-bottom: 10px;
+}
+textarea{
+    height: 30vh;
+    
+}
+.h4{
+    text-align: center;
+    color: #fff;
+}
+.c{
+    text-align: center;
+}
+/* responsive */
+@media(max-width: 768px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img1{
+        position: static;
+        margin: 10px auto;
+        top: 0;
+        left: 0;
+    }
+    main{
+        text-align: center;
+    }
+    .img{
+        width: 80%;
+    }
+    .bouton{
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    form{
+        width: 80%;
+        right: 0;
+        margin: 0 auto;
+    }
+    input,textarea{
+        width: 100%;
+    }
+    #About section{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width:480px){
+    header h3{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.8em;
+    }
+    .bouton{
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .img1{
+        width: 150px;
+        height: 150px;
+    }
+    main h4{
+        font-size: 1.2em;
+    }
+    footer{
+        padding: 5px;
+    }
+    input, textarea{
+        width: 100%;
+        font-size: 14px;
+    }
+    #About {
+        padding: 10px;
+        flex-direction: column; /* Aligne les sections en colonne */
+        text-align: center; /* Centre le texte */
+    }
+
+    #About section {
+        flex: 1 1 100%; /* Chaque section prend toute la largeur */
+        max-width: 100%; /* S'assure que chaque section prend 100% de la largeur */
+        margin: 10px 0; /* Espacement entre les sections */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Réduit la taille des titres pour les petits écrans */
+    }
+
+    p {
+        font-size: 1em; /* Réduit légèrement la taille des paragraphes */
+        margin: 10px 0; /* Espacement plus petit pour éviter le débordement */
+        padding: 0 10px; /* Ajoute un peu de marge intérieure pour éviter que le texte touche les bords */
+    }
+
+    table {
+        font-size: 14px; /* Réduit la taille de la police pour la table */
+        width: 100%; /* Assure que la table occupe toute la largeur */
+        border-collapse: collapse; /* Pour améliorer l'affichage des bordures */
+    }
+
+    table th, table td {
+        padding: 8px; /* Ajoute un peu de padding dans les cellules de la table */
+        text-align: left; /* Aligne le texte à gauche */
+    }
+
+    .ul {
+        font-size: 14px; /* Réduit la taille des éléments de liste */
+    }
+}
